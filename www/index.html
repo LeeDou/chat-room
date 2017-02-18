@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>嗨聊</title>
+	<link rel="stylesheet" href="style/main.css">        
+    </head>
+
+</head>
+<body>
+	<div class="wrapper">
+            <div class="banner">
+                <h1>嗨聊</h1>
+                <span id="status"></span>
+            </div>
+            <div id="historyMsg">
+            </div>
+            <div class="controls" >
+                <div class="items">
+                    <input id="colorStyle" type="color" placeHolder='#000' title="font color" />
+                    <input id="emoji" type="button" value="emoji" title="emoji" />
+                    <label for="sendImage" class="imageLable">
+                        <input type="button" value="image"  />
+                        <input id="sendImage" type="file" value="image"/>
+                    </label>
+                    <input id="clearBtn" type="button" value="clear" title="clear screen" />
+                </div>
+                <textarea id="messageInput" placeHolder="enter to send"></textarea>
+                <input id="sendBtn" type="button" value="SEND">
+                <div id="emojiWrapper">
+                </div>
+            </div>
+        </div>
+        <div id="loginWrapper">
+            <p id="info">connecting to server...</p>
+            <div id="nickWrapper">
+                <input type="text" placeHolder="nickname" id="nicknameInput" />
+                <input type="button" value="OK" id="loginBtn" />
+            </div>
+        </div>
+
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="scripts/Hichat.js"></script>
+
+</body>
+</html>
