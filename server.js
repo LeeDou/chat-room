@@ -6,6 +6,7 @@ var express = require('express'),
     users=[];//保存所有在线用户的昵称
 app.use('/', express.static(__dirname + '/www'));
 server.listen(80);
+console.log("server in localhost:80");
 //socket部分
 io.on('connection', function(socket) {
     //昵称设置
